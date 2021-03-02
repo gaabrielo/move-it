@@ -1,0 +1,111 @@
+.overlay {
+    background: rgba(242, 243, 245, 0.8);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: var(--white);
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem 3rem;
+
+    border-radius: 5px;
+    box-shadow: 0 0 60 rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.container > p:first-of-type {
+    margin-bottom: 1.75rem;
+}
+
+.container > label {
+    font-size: 1.5rem;
+    color: var(--title);
+    font-weight: 600;
+    text-align: left;
+}
+
+.container > div {
+    width: 100%;
+    height: 3.5rem;
+
+    display: flex;
+    margin-top: 1rem;
+}
+
+.container input {
+    width: 80%;
+    height: 100%;
+
+    border: 0;
+    outline: none;
+    background: linear-gradient(90deg, #4953B8 0%, rgba(73, 83, 184, 0.5) 100%);
+    border-radius: 5px 0px 0px 5px;
+
+    padding: 18px 24px;
+
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.container > input {
+    width: 100%;
+    height: 3.5rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+.container input::placeholder {
+    font-weight: normal;
+    color: #B2B9FF;
+}
+
+.container input:hover,
+.container input:focus {
+    border: 1.5px solid #414AA3;
+}
+
+.container > div > button {
+    width: 20%;
+    height: 100%;
+
+    font-size: 0;
+    border: 0;
+    outline: none;
+    background: #4953B8;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.container > div > button > img {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.container > p:first-of-type {
+    color: var(--red);
+}
+
+.container > p {
+    width: 80%;
+    font-size: 1rem;
+    color: var(--text);
+    margin-top: 0.5rem;
+}
+
+.container > button {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    background: transparent;
+    border: 0;
+    font-size: 0px;
+}
